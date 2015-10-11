@@ -1,3 +1,4 @@
+# fail
 import cv2
 cameraCapture = cv2.VideoCapture(0)
 fps = 30 # an assumption
