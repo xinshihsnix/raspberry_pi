@@ -8,5 +8,5 @@ print capture.isOpened()
 
 if capture.isOpened():
     ret, img = capture.read()
-    cv2.imwrite(time_now_str()+'.jpg', img)
+    cv2.imwrite('/var/' + time_now_str()+'.jpg', img)
     capture.release()
