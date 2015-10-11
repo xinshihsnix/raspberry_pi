@@ -18,8 +18,8 @@ videoWriter = cv2.VideoWriter(video_name, cv2.cv.CV_FOURCC('I','4','2','0'), fps
 
 success, frame = cameraCapture.read()
 
-numFramesRemaining = 10 * fps - 1
-# numFramesRemaining = 2 * fps - 1
+# numFramesRemaining = 10 * fps - 1
+numFramesRemaining = 2 * fps - 1
 
 while success and numFramesRemaining > 0:
     videoWriter.write(frame)
