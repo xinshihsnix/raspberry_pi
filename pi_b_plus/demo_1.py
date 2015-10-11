@@ -1,9 +1,6 @@
 # coding:utf-8
 import cv2
-import datetime
-
-def time_now_str():
-    return datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
+from utils import time_now_str
 
 capture = cv2.VideoCapture(0)
 
