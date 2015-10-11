@@ -9,8 +9,8 @@ CAMERA_WIDTH = int(cameraCapture.get(cv2.cv.CV_CAP_PROP_FRAME_WIDTH))
 CAMERA_HEIGHT = int(cameraCapture.get(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT))
 
 size = (
-    int(CAMERA_WIDTH/2),
-    int(CAMERA_HEIGHT/2),
+    CAMERA_WIDTH,
+    CAMERA_HEIGHT,
     )
 
 video_name = time_now_str() + '_start' + '.avi'
@@ -26,4 +26,4 @@ while success and numFramesRemaining > 0:
     success, frame = cameraCapture.read()
     numFramesRemaining -= 1
 
-# cameraCapture.release()
+cameraCapture.release()
