@@ -26,4 +26,4 @@ while success and numFramesRemaining > 0:
     success, frame = cameraCapture.read()
     numFramesRemaining -= 1
 
-cameraCapture.release()
+# cameraCapture.release()
