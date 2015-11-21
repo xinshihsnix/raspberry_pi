@@ -52,7 +52,7 @@ if __name__ == '__main__':
     while True:
         divineye = Divineye()
         divineye.save_img()
-        time.sleep(1)
         FileUploader.upload_to_xsite()
+
         time.sleep(PER_IMG_INTERVAL)
         break
