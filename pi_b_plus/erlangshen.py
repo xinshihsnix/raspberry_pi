@@ -52,7 +52,8 @@ if __name__ == '__main__':
     while True:
         divineye = Divineye()
         divineye.save_img()
-        FileUploader.upload_to_xsite()
-
+        try:
+            FileUploader.upload_to_xsite()
+        except Exception, e:
+            print 'eeeexe:', e
         time.sleep(PER_IMG_INTERVAL)
-        break
