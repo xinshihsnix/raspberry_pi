@@ -34,7 +34,7 @@ class FileUploader(object):
 
     @classmethod
     def upload_to_xsite(cls):
-        loader = cls(file_dir=IMG_SAVE_PATH, filename='%s.jpg'%time_now_str(), dest_url='http://192.168.1.102:9527/upload_file/')
+        loader = cls(file_dir=IMG_SAVE_PATH, filename='%s.jpg'%time_now_str(), dest_url='http://192.241.228.120:80/upload_file/')
         loader.upload_file()
 
 
