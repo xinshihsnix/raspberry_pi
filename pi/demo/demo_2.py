@@ -1,5 +1,6 @@
 import cv2
-from utils import time_now_str
+
+from pi_project.common.utils import time_now_str
 
 cameraCapture = cv2.VideoCapture(0)
 
